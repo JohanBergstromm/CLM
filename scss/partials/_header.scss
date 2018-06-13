@@ -1,0 +1,233 @@
+#home {
+    .main-nav {
+        background-color: $dark-black;
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+        &.active {
+            background-color: $dark-black;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+            box-shadow: 0px 0px 20px 1px $dark-black;
+        }
+        @media only screen and (min-width: 768px) {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .logo {
+            z-index: 1;
+            font-family: 'Challenge', san-serif, arial;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 22px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-decoration: none;
+            padding: 0.5rem 15px;
+            @media only screen and (min-width: 768px) {
+                padding: 0;
+            }
+        }
+        ul {
+            text-align: center;
+            position: relative;
+            background-color: $dark-black;
+            display: none;
+            margin-bottom: 0;
+            width: 100%;
+            &.active {
+                display: flex;
+            }
+            @media only screen and (min-width: 768px) {
+                text-align: right;
+                background-color: transparent;
+                display: block;
+                width: auto;
+            }
+            li {
+                display: inline-block;
+                width: 100%;
+                @media only screen and (min-width: 768px) {
+                    width: auto;
+                    margin-right: 3rem;
+                }
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    display: inline-block;
+                    position: relative;
+                    -webkit-transition: opacity 300ms ease-out;
+                    -moz-transition: opacity 300ms ease-out;
+                    -o-transition: opacity 300ms ease-out;
+                    transition: opacity 300ms ease-out;
+                    padding: 1rem 0;
+                    // &:after {
+                    //     content: "";
+                    //     background-color: #CBCBE2;
+                    //     display: inline-block;
+                    //     position: absolute;
+                    //     height: 1px;
+                    //     width: 100%;
+                    //     border-radius: 2px;
+                    //     bottom: 0px;
+                    //     left: 0;
+                    //     opacity: 0;
+                    //     transition: all 100ms ease-out;
+                    // }
+                    &:hover {
+                        opacity: 0.6;
+                        // &:after {
+                        //     opacity: 0.8;
+                        //     bottom: 20px;
+                        //     transition: all 300ms ease-out;
+                        // }
+                    }
+                    &.active {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+        .hamburger {
+            position: absolute;
+            width: 30px;
+            top: 15px;
+            right: 15px;
+            display: block;
+            @media only screen and (min-width: 768px) {
+                display: none;
+                right: 50px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            .line {
+                width: 100%;
+                height: 2px;
+                margin-bottom: 8px;
+                background-color: #fff;
+                transition: 300ms all ease-out;
+            }
+            &.active {
+                transition: 300ms all ease-out;
+                .line {
+                    transition: 300ms all ease-out;
+                    margin-bottom: -2px;
+                    &:first-of-type {
+                        -webkit-transform: rotate(40deg);
+                        -moz-transform: rotate(40deg);
+                        -o-transform: rotate(40deg);
+                        transform: rotate(40deg);
+                        margin-top: 10px;
+                    }
+                    &:nth-of-type(2) {
+                        opacity: 0;
+                    }
+                    &:last-of-type {
+                        -webkit-transform: rotate(-40deg);
+                        -moz-transform: rotate(-40deg);
+                        -o-transform: rotate(-40deg);
+                        transform: rotate(-40deg);
+                    }
+                }
+            }
+        }
+    }
+    .header {
+        height: 100vh;
+        background-color: $dark-black;
+        background-image: url(../images/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        &:after {
+            content: ' ';
+            background-color: rgba(0, 0, 0, 0.6);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+        }
+        @media only screen and(min-width: 768px) {
+            height: 650px;
+        }
+        .header-logo {
+            text-align: center;
+            position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            z-index: 1;
+            text-align: center;
+            @media only screen and (min-width: 768px) {
+                -webkit-transform: translateY(-65%);
+                -moz-transform: translateY(-65%);
+                -o-transform: translateY(-65%);
+                transform: translateY(-65%);
+            }
+            h1 {
+                font-family: 'Challenge', san-serif, arial;
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 10.5vw;
+                font-weight: 300;
+                letter-spacing: 10px;
+                opacity: 0;
+                @media only screen and (min-width: 768px) {
+                    left: 50px;
+                    font-size: 4rem;
+                }
+                span {
+                    display: inline-block;
+                    position: relative;
+                    // &:after {
+                    //     content: "";
+                    //     height: 2px;
+                    //     width: 100%;
+                    //     position: absolute;
+                    //     background-color: #fff;
+                    // }
+                }
+            }
+            button {
+                display: inline-block;
+                margin-top: 25px;
+                border: none;
+                border-radius: 15px;
+                font-size: 0.8rem;
+                padding: 5px 30px;
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0);
+                border: 1px solid #fff;
+                letter-spacing: 2px;
+                opacity: 0;
+                -webkit-transform: translateY(20px);
+                -moz-transform: translateY(20px);
+                -o-transform: translateY(20px);
+                transform: translateY(20px);
+            }
+            &.active {
+                h1 {
+                    opacity: 1;
+                    transition: opacity 3000ms ease-out;
+                    transition-delay: 200ms;
+                }
+                button {
+                    opacity: 1;
+                    transition: all 800ms ease-out;
+                    transition-delay: 500ms;
+                    -webkit-transform: translateY(0);
+                    -moz-transform: translateY(0);
+                    -o-transform: translateY(0);
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
