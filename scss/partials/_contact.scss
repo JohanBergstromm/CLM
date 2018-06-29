@@ -24,7 +24,7 @@
         #map {
             display: none;
             width: 100%;
-            
+
             @media only screen and(min-width: 768px) {
                 display: block;
             }
@@ -32,6 +32,8 @@
         .main-form {
             font-size: 0.9rem;
             color: #5e6578;
+            min-height: 405px;
+
             label {
                 font-weight: 300;
                 width: 100%;

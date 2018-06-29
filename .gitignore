@@ -3,3 +3,4 @@ dist/
 node_modules/
 phpmailer/
 mail/
+.gitignore
