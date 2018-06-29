@@ -8,6 +8,38 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+.font-dark {
+    color: #3e3e3e;
+}
+
+@media screen and (max-width: 767px) {
+    .order-0-mobile {
+        order: 0;
+    }
+
+    .order-1-mobile {
+        order: 1;
+    }
+}
+
+ul.unstyled {
+    padding: 0;
+    list-style: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .no-padding {
     padding-left: 0;
     padding-right: 0;

@@ -1,4 +1,34 @@
 @font-face {
     font-family: "Challenge";
-    src: url('../challenge_extra_bold.otf') format("truetype");
+    src: url('../fonts/challenge_extra_bold.otf') format("truetype");
+}
+
+@font-face {
+    font-family: "Playfair Black";
+    src: url('../fonts/PlayfairDisplay-Black.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Playfair Black Italic";
+    src: url('../fonts/PlayfairDisplay-BlackItalic.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Playfair Bold";
+    src: url('../fonts/PlayfairDisplay-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Playfair Bold Italic";
+    src: url('../fonts/PlayfairDisplay-BoldItalic.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Playfair Italic";
+    src: url('../fonts/PlayfairDisplay-Italic.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url('../fonts/PlayfairDisplay-Regular.ttf') format("truetype");
 }

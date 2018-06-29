@@ -1,0 +1,38 @@
+.owl-carousel {
+    position: relative;
+
+    .owl-item {
+        height: 450px;
+        background-image: url('../images/house-2.jpg')
+    }
+
+    .owl-nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 30px);
+        z-index: 1;
+        top: 0;
+        left: 0;
+        font-size: 3rem;
+
+        .owl-prev {
+            position: absolute;
+            width: 60px;
+            height: 100%;
+            transition: background-color 200ms ease-out;
+        }
+
+        .owl-next {
+            position: absolute;
+            right: 0;
+            width: 60px;
+            height: 100%;
+            transition: background-color 200ms ease-out;
+        }
+
+        .owl-prev:hover,
+        .owl-next:hover {
+            background-color: rgba(255, 255, 255, .2);
+        }
+    }
+}
