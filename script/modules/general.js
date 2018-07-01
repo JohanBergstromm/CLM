@@ -126,12 +126,13 @@ function contactForm() {
             return;
         } else {
             e.preventDefault();
-            //$.post('mail/mail.php', $(this).serialize()).then(function() {
+            $.post('mail/mail.php', $(this).closest('form').serialize()).then(function() {
                 $('.contact-form').fadeOut();
                 $('.success-message').delay(400).fadeIn();
-            //}).fail(function() {
+            }).fail(function(err) {
                 console.log('error');
-            //});
+                console.log(err);
+            });
         }
     });
 }

@@ -40,6 +40,10 @@ button:hover {
     cursor: pointer;
 }
 
+button:focus {
+    outline: none;
+}
+
 .no-padding {
     padding-left: 0;
     padding-right: 0;
